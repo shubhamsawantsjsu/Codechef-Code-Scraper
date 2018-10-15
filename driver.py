@@ -31,4 +31,3 @@ def test_cchef(username):
 
 if __name__ == '__main__':
     main()
-    test_cchef()

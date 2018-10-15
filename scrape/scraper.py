@@ -60,7 +60,7 @@ class cchef():
                         for li in parsed_response.find('div', {'id': 'solutiondiv'}).find('ol').findAll('li'):
                             submission['code'] += li.text.strip('\n') + '\n'
                     except:
-                        print('Except occurred')
+                        print('Exception occurred')
                         pass
                     problem['submissions'].append(submission)
                 self.submissions[uid] = problem
